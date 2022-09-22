@@ -1,0 +1,5 @@
+version=4
+opts="dversionmangle=s/\+ds//, repacksuffix=+ds, \
+   filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%go-wav-$1.tar.gz%" \
+   https://github.com/youpy/go-wav/tags \
+   (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
